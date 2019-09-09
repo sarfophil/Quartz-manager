@@ -1,0 +1,14 @@
+spring:
+  kafka:
+    producer:
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+  quartz:
+    job-store-type: memory
+    task:
+      execution:
+        pool:
+          queue-capacity: 10
+          allow-core-thread-timeout: true
+          keep-alive: 10s
+
+
